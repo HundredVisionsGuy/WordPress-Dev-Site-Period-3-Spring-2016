@@ -8,7 +8,7 @@
 <!-- 404.php -->
 <div class="row">
 	<section class="col-md-8">
-		<h2><?php _e('Error 404 - Nothing to see here...Move along!','html5reset'); ?></h2>
+		<h2><?php _e('Error 404 - Page Not Found','html5reset'); ?></h2>
 	</section>
 	<aside class="col-md-4">
 		<?php get_sidebar(); ?>
