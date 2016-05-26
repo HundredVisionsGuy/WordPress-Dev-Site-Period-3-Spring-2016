@@ -136,6 +136,11 @@
 		</header>
 
 		<nav id="nav" role="navigation">
-			<?php wp_nav_menu( array('theme_location' => 'primary') ); ?>
+            <button type="button" class="btn btn-default btn-lg responsive-toggle">
+              <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+            </button>
+			<?php wp_nav_menu( array('theme_location' => 'primary',
+                                      'menu_class' => 'nav nav-pills',
+                                      'container' => 'ul'  ) ); ?>
 		</nav>
 

@@ -11,8 +11,65 @@
  Tags:         bootstrap, multiple-columns, right-sidebar, responsive-layout
  Text Domain:  HTML5-Reset
 */
-
+/* Load Web Fonts */
+@font-face {
+    font-family: 'Autour';
+    src: url('fonts/AutourOne-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src:  url('fonts/Montserrat-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src:  url('fonts/Montserrat-Ultralight.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src:  url('fonts/Montserrat-Bold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src:  url('fonts/Montserrat-ExtraBold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src:  url('fonts/Montserrat-Black.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+/* Mobile First Design:
+    Phone Portrait Styles
+    */
 .fontface {
-	font-family: Consolas, monospace;
+	font-family: 'Montserrat';
+}
+.fontface strong {
+    font-family: 'Montserrat';
+    font-weight:  600;
+}
+.container h1, 
+.container h2, 
+.container h3 {
+    font-family: 'Autour', Calibri, sans-serif;
+}
+div.container {
+    width: 100%;
 }
 
+/* End of Phone Portrait */
+
+/* Medium Width Styles (minimum 927px wide) */
+@media (min-width: 927px) {
+    div.container {
+        width: 917px;
+    }
+}
